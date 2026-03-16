@@ -1,4 +1,4 @@
-package com.base.customStack;
+package com.flowerBase.customStack;
 
 public class StackDemo extends getIntegerStack{
     public static void main(String[] args) {

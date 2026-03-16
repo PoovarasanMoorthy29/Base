@@ -1,5 +1,5 @@
-package com.base.math;
-import com.base.customScanner.getInput.*;
+package com.flowerBase.math;
+
 public class ArithmeticOperation {
     public int add(int num1,int num2){
         return num1+num2;
@@ -71,6 +71,14 @@ public class ArithmeticOperation {
             fact*=index;
         }
         return fact;
+    }
+    public int abs(int num){
+        if(num<0){
+            return num*(-1);
+        }
+        else {
+            return num;
+        }
     }
 
 

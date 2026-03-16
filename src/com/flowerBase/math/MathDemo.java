@@ -1,10 +1,10 @@
-package com.base.math;
-import com.base.customScanner.*;
+package com.flowerBase.math;
+import com.flowerBase.customScanner.*;
 public class MathDemo {
     public static void main(String[] args) {
         ArithmeticOperation obj=new ArithmeticOperation();
         getInput read=new getInput();
-        int n=5;
-        System.out.println(obj.factorial(n));
+
+        System.out.println(obj.abs(15-25));
     }
 }
