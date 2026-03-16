@@ -32,10 +32,14 @@ public class getIntegerStack implements IntegerStack {
     public int pop() {
         try {
             if (isEmpty()) {
-                System.out.println("Stack was Empty ");
+                throw new StackOverflowError();
             }
             return arr[top--];
-        } catch (Exception e) {
+        }
+        catch(StackOverflowError s){
+            System.out.println("Stack was already full");
+        }
+        catch (Exception e) {
             System.out.println("Exception was handled");
         }
         return top;
