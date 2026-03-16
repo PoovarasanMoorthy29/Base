@@ -18,31 +18,24 @@ public class getIntegerStack implements IntegerStack {
     }
     @Override
     public void push(int value) {
-        try {
-            if (isFull()) {
-                System.out.println("Stack was full");
-            }
-            arr[++top] = value;
-        } catch (Exception e) {
-            System.out.println("Exception was handled");
+
+        if (isFull()) {
+            System.out.println("Stack was full");
         }
+        else {
+            arr[++top] = value;
+            System.out.println("Data were added!...");
+        }
+
     }
 
     @Override
     public int pop() {
-        try {
-            if (isEmpty()) {
-                throw new StackOverflowError();
-            }
-            return arr[top--];
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
         }
-        catch(StackOverflowError s){
-            System.out.println("Stack was already full");
-        }
-        catch (Exception e) {
-            System.out.println("Exception was handled");
-        }
-        return top;
+        return arr[top--];
     }
 
     @Override

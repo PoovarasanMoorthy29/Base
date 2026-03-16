@@ -47,7 +47,7 @@ public class getInput implements getScanner{
     public String getString() {
         return getScannerObj().nextLine();
     }
-    public void getIntArray(int size){
+    public int[] getIntArray(int size){
         int[] result=new int[size];
         int no=1;
         for(int index=0;index<size;index++){
@@ -55,18 +55,19 @@ public class getInput implements getScanner{
             result[index]=getInt();
             no++;
         }
-        printArray(result);
+        return result;
+
     }
     public void printArray(int[] arr){
         for(int index=0;index<arr.length;index++){
            if(index==0){
-               System.out.println("["+arr[index]+",");
+               System.out.print("["+arr[index]+",");
            }
            else if(index==arr.length-1){
-               System.out.println(arr[index]+"]");
+               System.out.print(arr[index]+"]");
            }
            else{
-               System.out.println(arr[index]+",");
+               System.out.print(arr[index]+",");
            }
         }
 
