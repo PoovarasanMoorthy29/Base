@@ -3,23 +3,18 @@ package com.flowerBase.math;
 public class ArithmeticOperation {
     public int add(int num1,int num2){
         return num1+num2;
-
     }
     public int sub(int num1,int num2){
         return num1-num2;
-
     }
     public int multiply(int num1,int num2){
         return num1*num2;
-
     }
     public int divide(int num1,int num2){
         return num1/num2;
-
     }
     public int modulo(int num1,int num2){
         return num1%num2;
-
     }
     public int findMax(int num1,int num2){
         if (num1 < num2) {
@@ -79,6 +74,17 @@ public class ArithmeticOperation {
         else {
             return num;
         }
+    }
+    public int fibonacci(int num){
+        if (num <= 1) return num;
+        int prev = 0;
+        int current = 1;
+        for (int i = 2; i <= num; i++) {
+            int next = prev + current;
+            prev = current;
+            current = next;
+        }
+        return current;
     }
 
 

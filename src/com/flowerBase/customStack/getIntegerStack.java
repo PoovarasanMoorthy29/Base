@@ -79,7 +79,6 @@ public class getIntegerStack implements IntegerStack {
                 }
             }
         }
-
         return "";
     }
 }
