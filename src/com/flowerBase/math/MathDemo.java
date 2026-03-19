@@ -5,6 +5,6 @@ public class MathDemo {
         ArithmeticOperation obj=new ArithmeticOperation();
         InputGetter read=new InputGetter();
 
-        System.out.println(obj.abs(15-25));
+        read.printArray(new int[] {1,2,3,4,5});
     }
 }

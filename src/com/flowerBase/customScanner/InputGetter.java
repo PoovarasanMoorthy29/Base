@@ -59,17 +59,16 @@ public class InputGetter implements GiveScanner {
 
     }
     public void printArray(int[] arr){
+        System.out.print("[");
         for(int index=0;index<arr.length;index++){
-           if(index==0){
-               System.out.print("["+arr[index]+",");
-           }
-           else if(index==arr.length-1){
-               System.out.print(arr[index]+"]");
+           if(index==arr.length-1){
+               System.out.print(arr[index]);
            }
            else{
                System.out.print(arr[index]+",");
            }
         }
+        System.out.println("]");
 
     }
 
