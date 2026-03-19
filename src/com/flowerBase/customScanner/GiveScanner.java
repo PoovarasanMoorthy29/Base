@@ -2,7 +2,7 @@ package com.flowerBase.customScanner;
 
 import java.util.Scanner;
 
-public interface getScanner {
+public interface GiveScanner {
     Scanner getScannerObj();
     byte getByte();
     short getShort();

@@ -2,7 +2,7 @@ package com.flowerBase.customScanner;
 
 import java.util.Scanner;
 
-public class getInput implements getScanner{
+public class InputGetter implements GiveScanner {
     @Override
     public Scanner getScannerObj() {
         return new Scanner(System.in);
