@@ -1,4 +1,4 @@
-package com.flowerBase.math;
+package com.flowerBase;
 
 public class ArithmeticOperation {
     public int add(int num1,int num2){

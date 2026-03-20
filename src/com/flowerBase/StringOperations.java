@@ -1,4 +1,4 @@
-package com.flowerBase.string;
+package com.flowerBase;
 
 public class StringOperations {
     public int len(String str){

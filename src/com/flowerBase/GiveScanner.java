@@ -1,4 +1,4 @@
-package com.flowerBase.customScanner;
+package com.flowerBase;
 
 import java.util.Scanner;
 

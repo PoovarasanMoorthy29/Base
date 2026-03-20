@@ -1,8 +1,8 @@
-package com.flowerBase.customScanner;
+package com.flowerBase;
 
 import java.util.Scanner;
 
-public class InputGetter implements GiveScanner {
+public class InputGetter<T> implements GiveScanner {
     @Override
     public Scanner getScannerObj() {
         return new Scanner(System.in);
@@ -58,7 +58,7 @@ public class InputGetter implements GiveScanner {
         return result;
 
     }
-    public void printArray(int[] arr){
+    public void printArray(T[] arr){
         System.out.print("[");
         for(int index=0;index<arr.length;index++){
            if(index==arr.length-1){
